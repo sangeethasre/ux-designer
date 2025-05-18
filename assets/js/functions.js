@@ -266,7 +266,7 @@ $lightboxMedia.each(function() {
 /*===============================================
   10. Contact Form
 ===============================================*/
-$("#contactform").on("submit", function(e) {
+/*$("#contactform").on("submit", function(e) {
   var name = $("#name").val();
   var email = $("#email").val();
   var subject = $("#subject").val();
@@ -305,7 +305,7 @@ $("#contactform").on("submit", function(e) {
   }
 
   e.preventDefault();
-});
+}); */
 
 
 /*===============================================
