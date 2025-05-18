@@ -484,35 +484,34 @@ I sketch, click, drag, drop, test, tweak, and repeat. Until it feels just right.
 									<ul class="list-inline-pills mt-4">
 										<li>Phone: +91 9606 999 582</li>
 										<li>Email: sangeetha11701@gmail.com</li>
-										<li>Address: Bengaluru, Karnataka 560 070</li>
+										<li>Address: BSK, Bengaluru, Karnataka 560 070</li>
 									</ul>
 								</div>
 							</div><!-- end row -->
 							<div class="mt-4 mt-lg-5">
 								<!-- Contact Form -->
-								<div class="contact-form">
-									<form method="post" id="contactform">
-										<div class="row gx-3 gy-0">
-											<div class="col-12 col-md-6">
-												<input type="text" id="name" name="name" placeholder="Name" required>
-											</div>
-											<div class="col-12 col-md-6">
-												<input type="email" id="email" name="email" placeholder="E-Mail" required>
-											</div>
+								<div class="contact-form"></div>
+								<form method="POST" action="https://formspree.io/f/xbloweye" id="contactform">
+									<div class="row gx-3 gy-0">
+										<div class="col-12 col-md-6">
+											<input type="text" id="name" name="name" placeholder="Name" required>
 										</div>
-										<input type="text" id="subject" name="subject" placeholder="Subject" required>
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-										<button class="button button-md" type="submit">Send Message</button>
-									</form>
-									<!-- Submit result -->
-									<div class="submit-result">
-										<span id="success">Thank you! Your Message has been sent.</span>
-										<span id="error">Something went wrong, Please try again!</span>
+										<div class="col-12 col-md-6">
+											<input type="email" id="email" name="email" placeholder="E-Mail" required>
+										</div>
 									</div>
-								</div><!-- end contact-form -->
-							</div>
-						</div><!-- end section-box -->
-						<!-- end Contact section -->
+									<input type="text" id="subject" name="subject" placeholder="Subject" required>
+									<textarea name="message" id="message" placeholder="Message" required></textarea>
+									<!-- Optional redirect after submission -->
+									 <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html">
+									 <button class="button button-md" type="submit">Send Message</button>
+									</form>
+									<!-- Optional success/error messages (Formspree doesn't auto-toggle these) -->
+									 <div class="submit-result">
+										<span id="success" style="display: none;">Thank you! Your Message has been sent.</span>
+										<span id="error" style="display: none;">Something went wrong, Please try again!</span>
+									</div>
+								</div>
 
 						<!-- Google Maps -->
 						<div id="map1" class="gmap gmap-sm mt-4 border-radius box-shadow" data-latitude="12.913244" data-longitude="77.560021"></div>
